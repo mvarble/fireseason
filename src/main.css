@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'cokobi';
+  src: url('../assets/cokobi.ttf') format('truetype');
+}
+
+body { 
+  min-width: 350px;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-image: url('../assets/bg.png');
+}
+
+a:hover {
+  filter: brightness(150%);
+}
+
+.container {
+ overflow: hidden; 
+ box-sizing: border-box;
+ width: 100%; 
+ height: 100%; 
+ max-width: 1200px; 
+ padding: 1em;
+ margin: 0 auto;
+}
+
+:root {
+  --logoBg: #4c4d53;
+  --logoAccent: #dff2ff;
+  --logoLine:  #ff6161;
+}

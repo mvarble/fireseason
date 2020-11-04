@@ -1,0 +1,54 @@
+---
+title: Home
+---
+
+import Logo from '../src/logo';
+import { WavyTitle } from '../src/wavy-text';
+import Waves from '../src/waves';
+import sam from '../assets/sam.jpg';
+import venmo from '../assets/venmo-cropped.png';
+import { block } from './index.module.css';
+
+<Logo style={{ width: '400px', margin: '0 auto', display: 'block' }}/>
+
+<Waves style={{ 
+  width: '100%', 
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  zIndex: -1,
+  height: '500px',
+ }}/>
+
+<WavyTitle>About</WavyTitle>
+
+<div className={ block }>
+  <img src={ sam } alt="sam"/>
+  <p>
+      Fire Season is a hot sauce company in Santa Barbara that is currently looking for volunteers who are willing to: 
+      <ul>
+        <li>try out the hot sauce</li>
+        <li>give feedback on the recipe</li>
+        <li>make a small donation to keep our dream alive!</li>
+      </ul>
+  </p>
+</div>
+
+<WavyTitle>Contact</WavyTitle>
+
+<div className={ block }>
+  <p>
+    Please email <a href="mailto:fireseasonhotsauce@gmail.com">fireseasonhotsauce@gmail.com</a>, and I will get back to you.
+  </p>
+</div>
+
+
+<WavyTitle>Venmo</WavyTitle>
+
+<img src={ venmo } alt="venmo" style={{ 
+  display: 'block', 
+  margin: '0 auto', 
+  background: 'var(--logoAccent)',
+  border: '1px solid var(--logoBg)',
+  maxWidth: '100%',
+}}/>
